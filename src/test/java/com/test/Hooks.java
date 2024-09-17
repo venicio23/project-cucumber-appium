@@ -19,7 +19,7 @@ public class Hooks {
         File app = new File("apps/app-debug.apk");
         cap.setCapability("app", app.getAbsolutePath());
         cap.setCapability("platformName", "Android");
-        cap.setCapability("deviceName", "Android Emulator");
+        cap.setCapability("deviceName", "emulator-5554");
         driver = new AndroidDriver<>(new URL("http://127.0.0.1:4723/wd/hub"), cap);
         return driver;
 

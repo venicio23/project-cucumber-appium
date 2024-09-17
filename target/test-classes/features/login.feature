@@ -1,9 +1,8 @@
 #language: pt
 
-  Funcionalidade: Login
+  Funcionalidade: Login de usuario melhoria de cenário bonito
 
     @test
     Cenario: Login com sucesso
-      Dado que eu informe usuário e senha
-      Quando eu clicar no botão logar
-      Então vou visualizar a home do aplicativo
+      Dado que eu escreva as informações do usuário
+      Quando escrever os dados da senha com "123456"

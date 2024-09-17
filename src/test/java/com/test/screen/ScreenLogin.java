@@ -7,23 +7,17 @@ import org.openqa.selenium.remote.RemoteWebElement;
 public class ScreenLogin extends BaseScreen {
 
     @AndroidFindBy(id="login_username")
-    private RemoteWebElement campoemail;
+    private RemoteWebElement fieldEmail;
 
     @AndroidFindBy(id="login_password")
-    private RemoteWebElement camposenha;
-
-    @AndroidFindBy(id="login_button")
-    private RemoteWebElement botaologar;
+    private RemoteWebElement fieldPassword;
 
     public void writeEmail(){
-        campoemail.sendKeys("qazando@gmail.com");
+        fieldEmail.sendKeys ("qazando@gmail.com");
     }
 
-    public void writePass(){
-        camposenha.sendKeys("1234567");
+    public void writePassword(String txt){
+        fieldPassword.sendKeys(txt);
     }
 
-    public void clickBtn(){
-        botaologar.click();
-    }
 }
